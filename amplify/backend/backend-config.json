@@ -1,0 +1,12 @@
+{
+  "api": {},
+  "auth": {
+    "anystay179054248": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "function": {}
+}
