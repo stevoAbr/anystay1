@@ -1,59 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-// class Homescreen extends Component {
-//     state = { username: '', password: '', email: '', phone_number: '', authenticationCode: '', step: 0}
-//     onChange = e => {
-//         this.setState({[e.target.name]: e.target.value})
-//     }
-//     signUp = async () => {
-//         const {username, password, email, phone_number} = this.state
-//         try {
-//             await Auth.signUp({username, password, attributes: { email, phone_number}})
-//             console.log('successfully signed up!')
-//             this.setState({ step:1})
-
-//         } catch (err) { console.log('error signing up:', err)}
-//     }
-//     connfirmSignup = async () => {
-//         const{ username, authenticationCode} = this.state
-//         try{
-//             await Auth.connfirmSignup(username, authenticationCode)
-//             console.log('successfully signed up')
-
-//         } catch (err) { console.log('error confirming sign up', err)}
-//     }
-//     render() {
-//         return(
-            
-//         <div className="signup">
-//         {
-//             this.state.step === 0 && (
-//                 <div>
-//                     <input placeholder='username' onChange={this.Onchange} name='username'/>
-//                     <input placeholder='password' onChange={this.Onchange} name='password' type='password'/>
-//                     <input placeholder='email' onChange={this.Onchange} name='email'/>
-//                     <input placeholder='phone number' onChange={this.Onchange} name='phone_number'/>
-//                     <button onClick={this.signUp}>Sign Up</button>
-//                 </div>
-//             )
-//         }
-//         {
-//             this.state.step === 1 && (
-//                 <div>
-//                     <input placeholder='username' onChange={this.Onchange} name='username'/>
-//                     <input placeholder='authentication code' onChange={this.Onchange} name='authenticationCode'/>
-//                     <button onClick={this.connfirmSignup}>Confirm Sign Up</button>
-//                 </div>
-//             )
-//         }
-
-//     </div>
-//         )
-
-//     }
-
-// }
+import SignUp from '../../components/Landing_SignUp';
 
 
 const HomeScreen = (props) => {
@@ -61,10 +9,7 @@ const HomeScreen = (props) => {
         
         <section class="homepage-container">
             <div class="home-banner">
-                <form class="search-container">
-                    <input type="text" id="search-bar" placeholder="Enter your phone to get started"></input>
-                    <button class="join-btn">Join</button>
-                </form>
+                <SignUp />
                
                 <div class="banner-blurb">
                     <h1 class="mobile-banner-title">Flexible rentals<br></br> coming late 2021</h1>
