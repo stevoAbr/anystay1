@@ -1,12 +1,13 @@
 {
   "api": {},
   "auth": {
-    "anystay179054248": {
+    "anystay158a0693b": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
     }
   },
-  "function": {}
+  "function": {},
+  "storage": {}
 }
