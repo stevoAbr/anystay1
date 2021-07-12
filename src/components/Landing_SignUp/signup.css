@@ -40,4 +40,5 @@ input#search-bar{
     font-size: 12px;
     line-height: 140%;
     color: #FFFFFF;
+    margin-right: 8px;
 }
